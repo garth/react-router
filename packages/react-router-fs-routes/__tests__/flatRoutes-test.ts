@@ -626,6 +626,22 @@ describe("flatRoutes", () => {
           path: "*",
         },
       ],
+      [
+        "routes/item.$id.tsx",
+        {
+          id: "routes/item.$id",
+          parentId: "root",
+          path: "item/:id",
+        },
+      ],
+      [
+        "routes/item.$id.edit.tsx",
+        {
+          id: "routes/item.$id.edit",
+          parentId: "root",
+          path: "item/:id/edit",
+        },
+      ],
     ];
 
     let files: [string, RouteManifestEntry][] = testFiles.map(
